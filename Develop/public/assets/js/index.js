@@ -72,7 +72,6 @@ const handleNoteDelete = function (event) {
   if (activeNote.id === note.id) {
     activeNote = {};
   }
-
   deleteNote(note.id).then(() => {
     getAndRenderNotes();
     renderActiveNote();
@@ -122,7 +121,6 @@ const renderNoteList = (notes) => {
     }
     return $li;
   };
-
   if (notes.length === 0) {
     noteListItems.push(create$li("No saved Notes", false));
   }
