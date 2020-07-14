@@ -61,7 +61,7 @@ const noteIndex = data.findIndex(note => note.id === id)
       data.splice(noteIndex, 1);
       res.send("note deleted")
     }
-  });
+  }); 
   
   
   app.get("*", (req, res) => {
